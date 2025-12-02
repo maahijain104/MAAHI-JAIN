@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Single Page</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    .main-nav a.active-link {
+      color: #fca311;
+      border-bottom: 2px solid #fca311;
+    }
+  </style>
+</head>
+<body>
+<a onclick="scrollToTop()" class="scroll-arrow" id="scrollArrow">
+  
+  <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"></path>
+  </svg>
+</a>
+
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <div class="brand">Portfolio</div>
+
+      
+      <nav class="main-nav" id="mainNav">
+        <a href="#home" class="active-link">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#photograph">Photograph</a>
+        <a href="#birds">Birds</a>
+        <a href="#portraits">Portraits</a>
+        <a href="#animals">Animals</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    
+ <section id="home" class="hero">
+ 
+  <div id="doodle-field"></div>
+
+  <div class="container hero-grid">
+    <div class="hero-left">
+      <h1>
+        <span class="big">Portfolio</span><br>
+        <span class="accent">DESIGNER</span>
+      </h1>
+      <p class="lead">Welcome to my creative space.</p>
+
+      <div class="hero-cta">
+        <a class="btn primary" href="#contact">Hire me</a>
+        <a class="btn outline" href="#about">About Me</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="orbit"></div>
+    </div>
+  </div>
+</section>
+
+    <section id="photograph" class="section content-dark" style="background-color: #1b1f24; position: relative; overflow: hidden;">
+      
+      
+      <div class="doodle-bg-container">
+         <svg style="position:absolute; top:20%; left:10%; width:40px; opacity:.1; color:#2dd4bf; animation:floatOne 7s infinite;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/></svg>
+         <svg style="position:absolute; bottom:15%; right:15%; width:50px; opacity:.1; color:#2dd4bf; animation:floatTwo 6s infinite;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/></svg>
+      </div>
+
+      <div class="container" style="position: relative; z-index: 10;">
+        <h2 class="gallery-heading" style="text-align: left; margin-bottom: 60px;">
+          THROUGH <span class="accent" style="color:#2dd4bf;">MY LENS</span>
+        </h2>
+
+        <div class="lens-grid">
+          
+          
+          <a href="#birds" class="lens-circle-item">
+            <div class="circle-img-wrapper">
+              
+              <img src="img/bird1.jpg" alt="Birds Photography">
+            </div>
+            <h3 class="circle-title">BIRDS</h3>
+            <span class="circle-subtitle">PHOTOGRAPH</span>
+          </a>
+
+         
+          <a href="#portraits" class="lens-circle-item">
+            <div class="circle-img-wrapper">
+              <img src="img/portrait2.jpg" alt="Portrait Photography">
+            </div>
+            <h3 class="circle-title">PORTRAIT</h3>
+            <span class="circle-subtitle">PHOTOGRAPHY</span>
+          </a>
+
+          
+          <a href="#animals" class="lens-circle-item">
+            <div class="circle-img-wrapper">
+              <img src="img/animal3.jpg" alt="Animal Photography">
+            </div>
+            <h3 class="circle-title">ANIMAL</h3>
+            <span class="circle-subtitle">PHOTOGRAPH</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+    
+   
+    <section id="about" class="about-section" style="
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+      overflow: hidden;
+      background-color: #1b1f24;
+      font-family: 'Open Sans', sans-serif;
+      color: #e2e8f0;">
+
+      
+      <div class="doodles-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;">
+        
+        
+        <svg style="position:absolute; top:10%; left:5%; width:50px; opacity:.15; 
+        color:#2dd4bf; animation:floatOne 6s infinite ease-in-out;" fill="none" 
+        stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>
+        </svg>
+
+       
+        <svg style="position:absolute; bottom:20%; left:8%; width:60px; opacity:.15; color:#2dd4bf; animation:floatTwo 8s infinite ease-in-out;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+        </svg>
+
+        
+        <svg style="position:absolute; top:15%; left:40%; 
+        width:40px; opacity:.1; color:#2dd4bf; 
+        animation:floatOne 9s infinite ease-in-out;" fill="none" 
+        stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+        </svg>
+
+      </div>
+
+      
+      <div class="container" style="position: relative; z-index: 10; max-width: 1200px; width: 100%; display: flex; gap: 60px; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+
+        
+        <div class="about-content" style="flex:1; max-width:600px;">
+          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 3.5rem; font-weight: 800; color: #fff; margin-bottom: 30px;">
+            About <span style="color:#2dd4bf;">me</span>
+          </h2>
+
+          <p style="font-size:1.1rem; line-height:1.8; color:#cbd5e1; margin-bottom:20px;">
+            I am a second-year <strong>Communication Design</strong> student at Atlas SkillTech University, crafting meaningful visual stories.
+          </p>
+
+          <p style="font-size:1.1rem; line-height:1.8; color:#cbd5e1; margin-bottom:20px;">
+            I explore <span style="color:#2dd4bf;">vector design</span>, <span style="color:#2dd4bf;">typography</span>, drawing, and photography.
+          </p>
+
+          <div style="border-left:3px solid #2dd4bf; padding-left:20px; margin-top:20px; font-style:italic; color:#94a3b8;">
+            "I bring precision, imagination, and emotion into every project."
+          </div>
+        </div>
+
+       
+        <div class="about-image-wrapper" style="
+          flex:1; 
+          display:flex; 
+          justify-content:center; 
+          align-items: center;
+          position:relative; 
+          min-height: 400px; /* Ensures space for doodles */
+        ">
+          
+          
+          <img src="img/about.jpg" alt="Profile Photo" style="
+            width:100%;
+            max-width:340px;
+            border-radius:15px;
+            box-shadow:0 20px 40px rgba(0,0,0,.5);
+            transform:rotate(2deg);
+            transition:.4s ease;
+            position: relative;
+            z-index: 5;
+          ">
+
+          <svg style="position:absolute; top: -20px; right: 20px; width: 60px; color:#2dd4bf; opacity:0.8; animation: floatTwo 5s infinite ease-in-out;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+
+          
+          <svg style="position:absolute; bottom: 10px; right: 0px; width: 55px; color:#2dd4bf; opacity:0.6; animation: floatOne 6s infinite ease-in-out;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+          </svg>
+
+        
+          <svg style="position:absolute; top: 20px; left: 10px; width: 50px; color:#2dd4bf; opacity:0.6; animation: floatTwo 7s infinite ease-in-out;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+             <path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+          </svg>
+
+          
+          <svg style="position:absolute; bottom: 30px; left: 0px; width: 45px; color:#2dd4bf; opacity:0.5; animation: floatOne 8s infinite ease-in-out;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+          </svg>
+
+          
+          <svg style="position:absolute; top: 40%; right: -30px; width: 35px; color:#2dd4bf; opacity:0.4; animation: floatTwo 4s infinite ease-in-out;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+             <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+          </svg>
+          
+           
+          <svg style="position:absolute; top: 50%; left: -20px; width: 40px; color:#2dd4bf; opacity:0.4; animation: floatOne 5s infinite ease-in-out;" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+             <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+          </svg>
+
+        </div>
+
+      </div>
+
+      
+      <style>
+        @keyframes floatOne {
+          0% { transform: translateY(0px) rotate(0deg); }
+          50% { transform: translateY(-15px) rotate(5deg); }
+          100% { transform: translateY(0px) rotate(0deg); }
+        }
+        @keyframes floatTwo {
+          0% { transform: translateY(0px) rotate(0deg); }
+          50% { transform: translateY(15px) rotate(-8deg); }
+          100% { transform: translateY(0px) rotate(0deg); }
+        }
+        
+        
+        @media (max-width: 768px) {
+           .about-image-wrapper svg {
+              display: none; 
+           }
+        }
+      </style>
+
+    </section>
+    
+
+    <section id="birds" class="section gallery-section">
+      
+      <div class="doodle-bg-container" id="birds-doodles"></div>
+
+      <div class="container">
+        <h2 class="gallery-heading">BIRDS<br><span class="accent">PHOTOGRAPH</span></h2>
+
+        <div class="gallery-grid">
+          
+          <div class="flip-card" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card-inner">
+              
+              <div class="flip-card-front">
+                <img src="img/bird1.jpg" alt="Kingfisher">
+              </div>
+              
+              <div class="flip-card-back">
+                <h3>Kingfisher</h3>
+                <p>A vibrant small bird known for its bright blue and orange plumage and expert fishing skills.</p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="flip-card" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/bird2.jpg" alt="Eagle">
+              </div>
+              <div class="flip-card-back">
+                <h3>Golden Eagle</h3>
+                <p>Captured this majestic bird of prey during a trip to the mountains. Look at that focus!</p>
+              </div>
+            </div>
+          </div>
+
+         
+          <div class="flip-card" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/bird3.jpg" alt="Parrot">
+              </div>
+              <div class="flip-card-back">
+                <h3>Macaw</h3>
+                <p>The colors on this parrot are absolutely stunning. Found in the tropical rainforests.</p>
+              </div>
+            </div>
+          </div>
+
+              <div class="flip-card" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/bird4.jpg" alt="Parrot">
+              </div>
+              <div class="flip-card-back">
+                <h3>Cattle Egret</h3>
+                <p>The Opportunist – Master of patience, it waits for the perfect moment to strike at hidden prey disturbed by movement.</p>
+              </div>
+            </div>
+          </div>
+
+              <div class="flip-card" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/bird5.jpg" alt="Parrot">
+              </div>
+              <div class="flip-card-back">
+                <h3>Greater Coucal</h3>
+                <p>Silent Stalker – Moves stealthily through deep bush and uses its copper wings to glide through the shadows.</p>
+              </div>
+            </div>
+          </div>
+
+              <div class="flip-card" onclick="this.classList.toggle('flipped')">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/bird6.jpg" alt="Parrot">
+              </div>
+              <div class="flip-card-back">
+                <h3>Owl</h3>
+                <p>Night Vision – Possesses piercing yellow eyes that see in the dark and flight so silent it never misses a target.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="portraits" class="section gallery-section content-dark">
+      
+       <div class="doodle-bg-container" id="portraits-doodles"></div>
+
+      <div class="container">
+        <h2 class="gallery-heading">PORTRAIT<br><span class="accent">PHOTOGRAPHY</span></h2>
+
+        <div class="gallery-grid">
+          
+         
+          <div class="flip-card" >
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/portrait1.jpg" alt="Portrait Model">
+              </div>
+              <div class="flip-card-back">
+                <h3>Urban Style</h3>
+                <p>A street style photoshoot exploring shadow and light in downtown Mumbai.</p>
+              </div>
+            </div>
+          </div>
+
+           
+           <div class="flip-card" >
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/portrait2.jpg" alt="Portrait Model">
+              </div>
+              <div class="flip-card-back">
+                <h3>Studio Session</h3>
+                <p>High contrast black and white photography focusing on raw emotion.</p>
+              </div>
+            </div>
+          </div>
+
+            <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/portrait3.jpg" alt="Portrait Model">
+              </div>
+              <div class="flip-card-back">
+                <h3>Studio Session</h3>
+                <p>High contrast black and white photography focusing on raw emotion.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="animals" class="section gallery-section">
+      
+      <div class="doodle-bg-container" id="animals-doodles"></div>
+
+      <div class="container">
+        <h2 class="gallery-heading">ANIMAL<br><span class="accent">PHOTOGRAPH</span></h2>
+
+        <div class="gallery-grid">
+          
+          
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/animal1.jpg" alt="Blue Beetle">
+              </div>
+              <div class="flip-card-back">
+                <h3>Macro World</h3>
+                <p>A stunning iridescent blue beetle captured on a blade of grass. Nature's little gem.</p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="flip-card" >
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/animal2.jpg" alt="Monkey">
+              </div>
+              <div class="flip-card-back">
+                <h3>Urban Monkey</h3>
+                <p>Caught mid-motion jumping between structures. A perfect moment of agility.</p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="flip-card" >
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/animal3.jpg" alt="Lizard">
+              </div>
+              <div class="flip-card-back">
+                <h3>Garden Lizard</h3>
+                <p>Basking in the sun on the pavement. Look at that long tail!</p>
+              </div>
+            </div>
+          </div>
+
+         
+          <div class="flip-card" >
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/animal4.jpg" alt="Squirrel">
+              </div>
+              <div class="flip-card-back">
+                <h3>Squirrel Snack</h3>
+                <p>A close-up of a squirrel busy enjoying its afternoon treat.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="img/animal5.jpg" alt="Black Dog">
+              </div>
+              <div class="flip-card-back">
+                <h3>Loyal Companion</h3>
+                <p>A candid profile shot of a beautiful dog looking into the distance.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+ <section id="contact" class="section gallery-section content-dark">
+
+      
+      <div class="doodles-container" style="position: absolute; 
+      top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1;">
+         
+         <svg style="position:absolute; top:10%; right:10%; width:60px; opacity:.1;
+          color:#2dd4bf; animation:floatOne 8s infinite ease-in-out;" fill="none" stroke="currentColor" 
+          stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" 
+          stroke-linejoin="round" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
+         
+         <svg style="position:absolute; bottom:20%; left:5%; width:50px; 
+         opacity:.1; color:#2dd4bf; animation:floatTwo 6s infinite ease-in-out;" fill="none" 
+         stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" 
+         stroke-linejoin="round" 
+         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        
+         <svg style="position:absolute; top:40%; left:50%; width:40px; opacity:.05; color:#2dd4bf; 
+         animation:floatOne 10s infinite ease-in-out;" fill="none" 
+         stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+         <path stroke-linecap="round" stroke-linejoin="round" 
+         d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+      </div>
+
+      <div class="container" style="
+        position: relative;
+        z-index: 10;
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+      ">
+
+        
+        <div style="flex: 1; min-width: 300px;">
+          <h2 style="font-family: 'Montserrat', sans-serif; font-size: 3rem; margin-bottom: 20px;">Let's 
+            <span style="color:#2dd4bf;">Talk</span></h2>
+          <p style="color: #cbd5e1; margin-bottom: 30px;">Fill in the form to start a conversation.</p>
+
+          <form class="contact-form" onsubmit="event.preventDefault(); showResult();" style="display: flex; flex-direction: column; gap: 20px;">
+            <input id="inpName" required type="text" placeholder="Your Name" 00
+                   style="padding: 15px; background: #252a33; border: 1px solid #333; color: white;
+                    border-radius: 8px; outline: none; transition: 0.3s;">
+            
+            <input id="inpEmail" required type="email" placeholder="Your Email" 
+                   style="padding: 15px; background: #252a33; border: 1px solid #333; 
+                   color: white; border-radius: 8px; outline: none; transition: 0.3s;">
+            
+            <textarea id="inpMsg" required placeholder="Write your message..." rows="5" 
+                   style="padding: 15px; background: #252a33; border: 1px solid #333; 
+                   color: white; border-radius: 8px; outline: none; transition: 0.3s; resize: none;"></textarea>
+            
+            <button class="btn primary" style="
+                background: #2dd4bf; color: #111; padding: 12px 30px; font-weight: bold; 
+                border: none; border-radius: 50px; cursor: pointer; align-self: flex-start;
+            ">Send Message</button>
+          </form>
+        </div>
+
+        
+        <div style="flex: 1; min-width: 300px; display: flex; flex-direction: column; justify-content: center;">
+          
+          
+          <div id="resultCard" style="
+            display: none; /* Hidden by default */
+            background: rgba(45, 212, 191, 0.1);
+            border: 1px solid #2dd4bf;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            animation: fadeIn 0.5s ease;
+          ">
+            <h3 style="font-family: 'Montserrat', sans-serif; color: #2dd4bf; 
+            font-size: 1.4rem; margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+              <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" 
+              viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z">
+                
+              </path></svg>
+              Message Sent!
+            </h3>
+
+            <div style="margin-bottom: 15px;">
+              <span style="display: block; font-size: 0.8rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">From:</span>
+              <span id="resName" style="font-size: 1.1rem; font-weight: bold; color: #fff;">-</span>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+              <span style="display: block; font-size: 0.8rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">Email:</span>
+              <span id="resEmail" style="font-size: 1rem; color: #2dd4bf;">-</span>
+            </div>
+
+            <div>
+              <span style="display: block; font-size: 0.8rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">Message:</span>
+              <p id="resMsg" style="font-size: 1rem; color: #cbd5e1; line-height: 1.6; margin-top: 5px;">-</p>
+            </div>
+          </div>
+
+          
+          <aside class="contact-info" style="display: flex; gap: 30px; border-top: 1px solid #333; padding-top: 20px;">
+            <div>
+              <h3 style="font-size: 0.9rem; color: #888;">EMAIL</h3>
+              <p style="color: #fff;">example@mail.com</p>
+            </div>
+            <div>
+              <h3 style="font-size: 0.9rem; color: #888;">PHONE</h3>
+              <p style="color: #fff;">+91 7XXXXXXXXX</p>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+</section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 — Portfolio</div>
+  </footer>
+
+</body>
+
+
+<script>
+  const scrollArrow = document.getElementById('scrollArrow');
+
+window.addEventListener('scroll', () => {
+    
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        scrollArrow.style.display = "flex";
+    } else {
+        scrollArrow.style.display = "none";
+    }
+});
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+  const doodleShapes = [
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>', 
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle></svg>', 
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path></svg>', 
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>', 
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 14 10 14 10 20"></polyline><polyline points="20 10 14 10 14 4"></polyline><line x1="14" y1="10" x2="21" y2="3"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>', 
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 6l-9.5 9.5-5-5L1 18"></path></svg>' 
+  ];
+
+  function generateDoodles(containerId, count) {
+    const container = document.getElementById(containerId);
+    if(!container) return;
+
+    for (let i = 0; i < count; i++) {
+      const el = document.createElement('div');
+      el.classList.add('bg-doodle');
+      
+    
+      el.innerHTML = doodleShapes[Math.floor(Math.random() * doodleShapes.length)];
+      
+      
+      const size = Math.floor(Math.random() * 40) + 20;
+      el.style.width = size + 'px';
+      el.style.height = size + 'px';
+
+      
+      el.style.top = Math.random() * 100 + '%';
+      el.style.left = Math.random() * 100 + '%';
+
+     
+      el.style.transform = `rotate(${Math.random() * 360}deg)`;
+
+      
+      const duration = Math.random() * 5 + 5; 
+      const delay = Math.random() * 5;
+      el.style.animationDuration = duration + 's';
+      el.style.animationDelay = delay + 's';
+
+      container.appendChild(el);
+    }
+  }
+ function showResult() {
+    
+    const name = document.getElementById('inpName').value;
+    const email = document.getElementById('inpEmail').value;
+    const msg = document.getElementById('inpMsg').value;
+
+    
+    if(name === "" || email === "" || msg === "") {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    
+    document.getElementById('resName').textContent = name;
+    document.getElementById('resEmail').textContent = email;
+    document.getElementById('resMsg').textContent = msg;
+
+    
+    const card = document.getElementById('resultCard');
+    card.style.display = "block"; 
+    
+   
+    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+  
+  generateDoodles('birds-doodles', 20);
+  
+  
+  generateDoodles('portraits-doodles', 20);
+
+  generateDoodles('animals-doodles', 20);
+</script>
+</html>
