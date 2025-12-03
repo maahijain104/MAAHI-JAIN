@@ -44,20 +44,20 @@
     }
     .nav-link:hover{ color: var(--accent); text-decoration: none; }
 
-    /* Sections */
+    
     section{
       padding: 5rem 0;
       border-bottom: 1px solid rgba(255,255,255,0.02);
     }
 
-    /* HERO */
+    
     .hero{
       min-height: 70vh;
       display: flex;
       align-items: flex-start;
-      position: relative; /* make hero a positioning context */
-      padding-top: 0;     /* remove any default top gap */
-      overflow: visible;  /* allow illustration to overflow/overlap */
+      position: relative; 
+      padding-top: 0;     
+      overflow: visible;  
     }
     .hero .row {
       display: flex;
@@ -181,7 +181,7 @@
     }
     .circle-caption{ text-align:center;margin-top:.8rem;font-weight:700; }
 
-    /* gallery grid for categories */
+    
     .gallery-grid{
       display:grid;
       grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
@@ -203,7 +203,7 @@
       border-radius:2px;
     }
 
-    /* Contact */
+  
     .contact-wrap{
       display:grid;
       grid-template-columns: 1fr 360px;
@@ -224,7 +224,7 @@
       color: #c7cbd0;
     }
 
-    /* Footer / small */
+    
     footer{
       padding: 3rem 0;
       text-align:center;
@@ -236,12 +236,13 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%; /* Optional, but helps centering */
+    width: 50%; 
   }
 
 
 <img src="your-image.jpg" alt="Description" class="center-img">
-    /* small screens */
+    
+
     @media (max-width: 991px){
       .about-grid{ grid-template-columns: 1fr; text-align:center; }
       .hero{ padding: 2rem 0; }
@@ -251,7 +252,7 @@
       .contact-wrap{ grid-template-columns: 1fr; }
     }
 
-    /* small niceties */
+    
     a.anchor-link{ cursor:pointer; }
 
     #birds .gallery-grid {
@@ -261,7 +262,7 @@
 </head>
 <body>
 
-  <!-- NAV -->
+  
   <nav class="container site-nav">
     <div class="d-flex align-items-center justify-content-between">
       <a class="navbar-brand text-white fw-bold" href="#home">Portfolio</a>
@@ -274,7 +275,7 @@
     </div>
   </nav>
 
-  <!-- HOME / HERO -->
+  
   <main class="container">
     <section id="home" class="hero">
       <div class="row w-100">
@@ -288,19 +289,20 @@
 
           <div class="cta-group">
             <a href="#contact" class="btn btn-accent">Hire me</a>
-            <!-- Replace href with /assets/cv.pdf or your CV link -->
+           
+
             <a href="your-cv-link.pdf" class="btn btn-ghost" download>Download CV ⤓</a>
           </div>
         </div>
 
         <div class="col-lg-6 hero-illustration d-none d-lg-flex">
-          <!-- Illustration: replace src with real illustration path -->
+          
           <img class="illustration-img" src="man-home.png" alt="illustration (replace path)">
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
+   
     <section id="about">
       <div class="about-grid container">
         <div class="about-text">
